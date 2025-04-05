@@ -1,0 +1,28 @@
+package string;
+
+public class StringIntro {//string is a class not a data type
+	//always use equals to compare strings instead of comparison operator
+	public static void main(String args[])
+	{
+		String name = "Krishna";//this is first way to assigning value
+		String name1 = "Tiwari";//both variable will point to same value 
+		String name2 = "tiwari";
+		String country = new String("India");//this is second way to assigning value
+		String country1 = new String("India");//this both object will create in side jvm memory
+		
+		System.out.println(name.equals(name1));//this will give output false
+		System.out.println(name1.equals(name2));//this will give output true
+		System.out.println(name1.equalsIgnoreCase(name2));//this will ignore case of string means we can compare upper and lower case strings
+		System.out.println(country.equals(country1));//this will give output true
+		
+		System.out.println(name==name1);//this will give output false
+		System.out.println(name1==name2);//this will give output false
+		
+		System.out.println("this is comparison operation for country"+country==country1);//this will give false because objects comparison is not allowed in java
+		
+		//string concatination
+		System.out.println("Addition of name and name 1 is : "+name+name1);//here we can add vies versa like below
+		System.out.println("Addition of name1 and name is: "+name1+name);
+	}
+
+}

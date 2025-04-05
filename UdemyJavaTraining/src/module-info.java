@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kristiwa
+ *
+ */
+module UdemyJavaTraining {
+}

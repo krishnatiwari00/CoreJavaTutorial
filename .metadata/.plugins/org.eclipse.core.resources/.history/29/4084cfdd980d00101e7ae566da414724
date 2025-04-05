@@ -1,0 +1,19 @@
+package stringPractice;
+
+public class Exercise {
+
+	 public void reverseWords(String sentense)
+	    {
+	        String [] reverse = sentense.split(" ");
+	        for(int i=reverse.length-1;i>0;i--)
+	        {
+	            System.out.print(reverse[i]);
+	        }
+	    }
+	    
+	public static void main(String[] args) {
+		Exercise ex = new Exercise();
+	    ex.reverseWords("The quick brown fox jumps over the lazy dog");
+	}
+
+}

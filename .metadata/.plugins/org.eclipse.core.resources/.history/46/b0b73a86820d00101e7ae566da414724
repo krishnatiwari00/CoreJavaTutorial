@@ -1,0 +1,12 @@
+package string;
+
+public class StringMethodPart3_4 {
+
+	public static void main(String[] args) {
+		
+		String text = "Hello Team";
+		String text1 = text.replace("e", "a");
+		System.out.println(text1);
+	}
+
+}

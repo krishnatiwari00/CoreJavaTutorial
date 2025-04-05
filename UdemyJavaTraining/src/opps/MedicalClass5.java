@@ -1,0 +1,31 @@
+package opps;
+
+public class MedicalClass5 implements Student5{
+
+	public void displayName() {
+		System.out.println("Hi, We are from Medical Department");
+		
+	}
+
+	public void getStudentNumber() {
+		System.out.println("We are 140 in class");
+		
+	}
+
+	public void getStandard() {
+		System.out.println("We are from Medical Science");
+		
+	}
+	
+	public void getUniversity()
+	{
+		System.out.println("We are from London University");
+	}
+
+	@Override
+	public void getInterfaceName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

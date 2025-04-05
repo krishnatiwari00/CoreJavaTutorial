@@ -1,0 +1,13 @@
+package opps;
+
+public interface Student5 {//this is interface, interface can extends interface
+	
+	public static final String university = "University of New York";
+	
+	public void displayName();
+	
+	public void getStudentNumber();
+	
+	public void getStandard();
+
+}

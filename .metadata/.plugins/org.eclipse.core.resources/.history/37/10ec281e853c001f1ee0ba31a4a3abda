@@ -1,0 +1,37 @@
+package training;
+
+import java.util.Arrays;
+
+public class ArraysDemo_7th {
+public static void main(String[] args) {
+	int[] intArray1= {100,90};
+	//intArray1 = new int[10];
+	//intArray1[0]=100;
+	//intArray1[1]=90;
+	
+	System.out.println("0 Index: "+intArray1[0]);
+	System.out.println("1 Index: "+intArray1[1]);
+	
+	String[] StringArray1 = {"BMW","Audi","RangeRover"};
+	
+	System.out.println("0 Index: "+StringArray1[0]);
+	System.out.println("1 Index: "+StringArray1[1]);
+	System.out.println("2 Index: "+StringArray1[2]);
+	
+	int len1 = intArray1.length;
+	int len2 = StringArray1.length;
+	
+	System.out.println("int array length: "+ len1);
+	System.out.println("String Array length: "+ len2);
+	
+	for(int i=0;i<len1;i++)
+	{
+		System.out.println(intArray1[i]);//this will print without sort
+	}
+	Arrays.sort(intArray1);
+	for(int i=0;i<len1;i++)
+	{
+		System.out.println("Int Array After Sort: "+intArray1[i]);//this will print after sort
+	}
+}
+}

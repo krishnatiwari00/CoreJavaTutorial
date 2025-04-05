@@ -1,0 +1,37 @@
+package exceptionHandling;
+
+public class NestedTryCatch {
+
+	public static void main(String[] args) {
+		try {
+			System.out.println("First Try Block");
+			String text = null;
+			System.out.println(text.length());
+			try 
+			{
+				System.out.println("Second try block");
+				int value = 100/0;
+				try 
+				{
+					System.out.println("Third try block");
+					int [] array = new int[3];
+					array[5]=500;
+				}
+				catch(Exception e)
+				{
+					System.out.println("End of third try block");
+				}
+			}
+			catch(Exception e)
+			{
+				System.out.println("End of Second try block");
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("End of First try block");
+			e.printStackTrace();
+		}
+	}
+
+}

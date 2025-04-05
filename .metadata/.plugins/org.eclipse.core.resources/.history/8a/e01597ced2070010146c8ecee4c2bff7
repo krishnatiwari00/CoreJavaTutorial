@@ -1,0 +1,35 @@
+package opps;
+/*super can be used to refer immediate parent class instance 
+variable. 
+ super can be used to invoke immediate parent class method. 
+ super() can be used to invoke immediate parent class 
+constructor.*/
+
+public class SuperBMW3 extends SuperCar{
+	String name = "BMW";
+	public void getName()
+	{
+		System.out.println(name);//this will print bmw class variable name
+		System.out.println(super.name);//this will print parent class variable name
+	}
+	public void run()
+	{
+		super.run();//accessing run method of parent class using super keyword
+		System.out.println("BMW is running");
+	}
+	
+	SuperBMW3()//constructor
+	{
+		//super();//this will call parent class constructor
+		//if i will comment super keyword then also i will get same output because when we are inheriting parent class and we are calling child class constructor then automatically parent class constructor will call or we can say when we will create object of child class then parent class constructor will call automatically in java.
+		//no need to call parent class constructor using super keyword in java.
+		System.out.println("BMW Constructor");
+	}
+
+	public static void main(String[] args) {
+		SuperBMW3 bmw = new SuperBMW3();
+		bmw.getName();
+		bmw.run();
+	}
+
+}

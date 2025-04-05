@@ -1,0 +1,32 @@
+package arrayPractice;
+
+public class PassArrayToMethod {
+	public void findMin(int arrayone[])
+	{
+		int min = arrayone[0];
+		for(int i=0;i<arrayone.length;i++)
+		{
+			if(min>arrayone[i])
+			{
+				min = arrayone[i];
+			}
+		}
+		System.out.println("minimum value in list is: "+min);
+	}
+	
+	public int[] getArray()
+	{
+		return new int[] {1,2,3,4,5,6,7};
+	}
+
+	public static void main(String[] args) {
+		 PassArrayToMethod array = new PassArrayToMethod();
+		 int testarray[]= {60,40,20,80,100};
+		 array.findMin(testarray);
+		 
+		 int testarray1[]= array.getArray();
+		 System.out.println("Returned array is: "+testarray1);
+
+	}
+
+}

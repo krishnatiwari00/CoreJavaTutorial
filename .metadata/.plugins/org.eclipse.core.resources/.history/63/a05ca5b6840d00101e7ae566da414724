@@ -1,0 +1,28 @@
+package string;
+
+public class StringMethodPart3_4 {
+
+	public static void main(String[] args) {
+		
+		String text = "Hello Team";
+		String Sample = "His name is john he is very good man";
+		
+		String text1 = text.replace("e", "a");
+		System.out.println(text1);
+		
+		String SampleTest = Sample.replace("is", "was");
+		System.out.println(SampleTest);
+		
+		String[] SampleTest1 = Sample.split(" ");
+		System.out.println(Sample);
+		
+		for(int i=0;i<SampleTest1.length;i++)
+		{
+			System.out.println(SampleTest1[i]);
+		}
+		
+		System.out.println(text.startsWith("H"));//it will print true
+		System.out.println(text.startsWith("t"));
+	}
+
+}

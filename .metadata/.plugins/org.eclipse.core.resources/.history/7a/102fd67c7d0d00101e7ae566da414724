@@ -1,0 +1,13 @@
+package string;
+
+public class StringMethodPart1_2 {
+
+	public static void main(String[] args) {
+		String test = "Learning is the Key";
+		
+		char ch = test.charAt(12);
+		System.out.println("CharAt method use: "+ch);
+
+	}
+
+}

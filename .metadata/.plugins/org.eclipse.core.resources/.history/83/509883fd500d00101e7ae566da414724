@@ -1,0 +1,18 @@
+package string;
+
+public class StringBufferIntro1 {
+
+	public static void main(String[] args) {
+		String name = "Krishna";//string class is immutable so we can not perform any actions like insert,append, insert,replace, delete operations in it
+		name.concat("Tiwari");
+		System.out.println("unmutalbe string output: "+name);//it will print only Krishna
+		
+		StringBuffer name1 = new StringBuffer("Sachin");
+		name1.append("Tiwari");
+		System.out.println("Mutable string output is: "+name1);//it will print Sachin Tiwari becasue StringBuffer is mutable so we can perform actions like append, insert, replace, delete
+		name1.insert(4, "Tiwari");
+		System.out.println(name1);
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package arrayPractice;
+
+public class TestArray {
+	/*
+	 * array is a collection of elements we can save only same type elements, array
+	 * size is fix we can not change it,we can access elements of array using index
+	 * array index start from 0
+	 */ 
+
+	public static void main(String[] args) {
+		int arrayone[] = new int[10];//this is one way to declaring array
+		arrayone[0]=10;
+		arrayone[1]=20;
+		arrayone[2]=30;
+		
+		System.out.println("arrayone index one value is: "+arrayone[1]);
+		for (int i=0;i<arrayone.length;i++)
+		{
+			System.out.println(arrayone[i]);
+		}
+		int arraytwo[] ={90,80,30,50,60};
+		System.out.println("arraytwo index 2nd value is: "+arraytwo[3]);
+		for(int i=0;i<arraytwo.length;i++)
+		{
+			System.out.println(arraytwo[i]);
+		}
+	}
+
+}

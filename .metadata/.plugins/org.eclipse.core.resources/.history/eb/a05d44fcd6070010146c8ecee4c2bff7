@@ -1,0 +1,23 @@
+package opps;
+
+public class MedicalClass5 implements Student5{
+
+	@Override
+	public void displayName() {
+		System.out.println("Hi, We are from Medical Department");
+		
+	}
+
+	@Override
+	public void getStudentNumber() {
+		System.out.println("We are 140 in class");
+		
+	}
+
+	@Override
+	public void getStandard() {
+		System.out.println("We are from Medical Science");
+		
+	}
+
+}
